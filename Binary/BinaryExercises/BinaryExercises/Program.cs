@@ -8,6 +8,21 @@ namespace BinaryExercises
 {
     class Program
     {
+        const byte CHAINSAW = 0x01;
+        const byte PISTOL = 0x01 << 1;
+        const byte SHOTGUN = 0x01 << 2;
+        const byte SUPER_SHOTGUN = 0x01 << 3;
+        const byte CHAINGUN = 0x01 << 4;
+        const byte ROCKET_LAUNCHER = 0x01 << 5;
+        const byte PLASMA_GUN = 0x01 << 6;
+        const byte BFG9000 = 0x01 << 7;
+
+        public static readonly string[] weapons = {
+         "Fists", "Chainsaw", "Pistol", "Shotgun", "Super Shotgun", "Chaingun",
+        "Rocket Launcher", "Plasma Gun", "BFG 9000"
+         };
+
+
         static void Main(string[] args)
         {
             /*
@@ -150,6 +165,7 @@ namespace BinaryExercises
             This means it is possible to store 8 bits in a single byte. Using bitwise operators, how might you 
             • Set an single bit to 0 
             • Set an single bit to 1 
+            &
             • Check the value of a single bit 
  
  
@@ -197,6 +213,64 @@ namespace BinaryExercises
             Console.WriteLine("Set Blue too " + blue + ". Retreived: " + colour.GetBlue());
             Console.WriteLine("Set Alpha too " + alpha + ". Retreived: " + colour.GetAlpha());
             Console.ReadKey();
+
+
+            byte inventory = 0;
+            inventory |= PLASMA_GUN;
+            inventory |= PISTOL;
+            inventory |= CHAINSAW;
+            PrintInventory(inventory);
+            Console.ReadKey();
+
+             byte value = 202;
+            ByteClass newByte = new ByteClass(value);
+            newByte.PrintBinary(value);
+            Console.WriteLine("IsLeftMostBitSet: " + newByte.IsLeftMostBitSet(value));
+            Console.WriteLine("IsRightMostBitSet: " + newByte.IsRightMostBitSet(value));
+            Console.WriteLine("GetRightMostSetBit: " + newByte.GetRightMostSetBit(value));
+
+            Console.ReadKey();
+
+        }
+
+        /* public static void PrintInventory(byte inventory)
+         {
+             Console.Write("Fists | ");
+             if ((inventory & CHAINSAW) == CHAINSAW)
+                 Console.Write("Chainsaw | ");
+             if ((inventory & PISTOL) == PISTOL)
+                 Console.Write("Pistol | ");
+             if ((inventory & SHOTGUN) == SHOTGUN)
+                 Console.Write("Shotgun | ");
+             if ((inventory & SUPER_SHOTGUN) == SUPER_SHOTGUN)
+                 Console.Write("Super Shotgun | ");
+             if ((inventory & CHAINGUN) == CHAINGUN)
+                 Console.Write("Chaingun | ");
+             if ((inventory & ROCKET_LAUNCHER) == ROCKET_LAUNCHER)
+                 Console.Write("Rocket Launcher | ");
+             if ((inventory & PLASMA_GUN) == PLASMA_GUN)
+                 Console.Write("Plasma Gun | ");
+             if ((inventory & BFG9000) == BFG9000)
+                 Console.Write("BFG 9000 | ");
+             Console.Write("\n");
+         }*/
+
+        public static void PrintInventory(byte inventory)
+        {
+            Console.Write("{0} | ", weapons[0]);
+            for (int i = 1; i < weapons.Length; i++)
+            {
+                int mask = 0x01 << i - 1;
+                if ((inventory & mask) == mask)
+                {
+                    Console.Write("{0} | ", weapons[i]);
+                }
+            }
+            Console.Write("\n");
+        }
+        public static void AddToInventory(ref byte inventory, byte weapon)
+        {
+            inventory |= weapon;
         }
     }
 }
