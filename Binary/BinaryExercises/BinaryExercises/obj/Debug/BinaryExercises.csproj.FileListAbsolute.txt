@@ -1,0 +1,7 @@
+F:\Aie\Maths for games\Weekly Tasks\Binary\BinaryExercises\BinaryExercises\bin\Debug\BinaryExercises.exe.config
+F:\Aie\Maths for games\Weekly Tasks\Binary\BinaryExercises\BinaryExercises\bin\Debug\BinaryExercises.exe
+F:\Aie\Maths for games\Weekly Tasks\Binary\BinaryExercises\BinaryExercises\bin\Debug\BinaryExercises.pdb
+F:\Aie\Maths for games\Weekly Tasks\Binary\BinaryExercises\BinaryExercises\obj\Debug\BinaryExercises.csprojAssemblyReference.cache
+F:\Aie\Maths for games\Weekly Tasks\Binary\BinaryExercises\BinaryExercises\obj\Debug\BinaryExercises.csproj.CoreCompileInputs.cache
+F:\Aie\Maths for games\Weekly Tasks\Binary\BinaryExercises\BinaryExercises\obj\Debug\BinaryExercises.exe
+F:\Aie\Maths for games\Weekly Tasks\Binary\BinaryExercises\BinaryExercises\obj\Debug\BinaryExercises.pdb

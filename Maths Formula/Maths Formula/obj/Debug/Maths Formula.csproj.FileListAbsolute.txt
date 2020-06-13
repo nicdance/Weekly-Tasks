@@ -1,0 +1,7 @@
+F:\Aie\Maths for games\Weekly Tasks\Maths Formula\Maths Formula\bin\Debug\Maths Formula.exe.config
+F:\Aie\Maths for games\Weekly Tasks\Maths Formula\Maths Formula\bin\Debug\Maths Formula.exe
+F:\Aie\Maths for games\Weekly Tasks\Maths Formula\Maths Formula\bin\Debug\Maths Formula.pdb
+F:\Aie\Maths for games\Weekly Tasks\Maths Formula\Maths Formula\obj\Debug\Maths Formula.csprojAssemblyReference.cache
+F:\Aie\Maths for games\Weekly Tasks\Maths Formula\Maths Formula\obj\Debug\Maths Formula.csproj.CoreCompileInputs.cache
+F:\Aie\Maths for games\Weekly Tasks\Maths Formula\Maths Formula\obj\Debug\Maths Formula.exe
+F:\Aie\Maths for games\Weekly Tasks\Maths Formula\Maths Formula\obj\Debug\Maths Formula.pdb
